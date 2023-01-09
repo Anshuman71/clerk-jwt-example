@@ -10,6 +10,6 @@ export default async function handler(req, res) {
       .status(200)
       .json({ safehouseKey: "under-the-doormat", message: "success" });
   } catch (err) {
-    console.log(err);
+    return res.status(401).json({ message: "error" });
   }
 }
