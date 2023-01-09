@@ -7,13 +7,13 @@ export default function Home() {
       <br />
       <ol>
         <li>
-          <Link passHref href={"/diy-home"}>
-            DIY Home
+          <Link passHref href={"/jwt-home"}>
+            JWT Home
           </Link>
         </li>
         <li>
-          <Link passHref href={"/diy-safehouse"}>
-            DIY Safe house
+          <Link passHref href={"/jwt-safehouse"}>
+            JWT Safe house
           </Link>
         </li>
         <li>

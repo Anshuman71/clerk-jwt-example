@@ -6,11 +6,11 @@ export default function SafeHouse() {
   const [userData, setUserData] = useState({});
 
   useEffect(() => {
-    const token = localStorage.getItem("diy-jwt-token");
+    const token = localStorage.getItem("jwt-token");
     setToken(token);
     fetch("/api/safehouse", {
       headers: {
-        "diy-jwt-token": token,
+        "jwt-token": token,
       },
     })
       .then((res) => res.json())
@@ -19,7 +19,7 @@ export default function SafeHouse() {
 
   function logout() {
     setToken("");
-    localStorage.removeItem("diy-jwt-token");
+    localStorage.removeItem("jwt-token");
   }
 
   if (!token) {
@@ -27,7 +27,7 @@ export default function SafeHouse() {
       <>
         <main style={{ padding: "50px" }}>
           <p>You&apos;re not logged in.</p>
-          <Link href={"/diy-home"}>Home</Link>
+          <Link href={"/jwt-home"}>Home</Link>
         </main>
       </>
     );

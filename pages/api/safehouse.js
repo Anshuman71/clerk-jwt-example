@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 
 export default function handler(req, res) {
-  const tokenHeaderKey = "diy-jwt-token";
+  const tokenHeaderKey = "jwt-token";
   const jwtSecretKey = process.env.DIY_JWT_SECRET;
   const token = req.headers[tokenHeaderKey];
   try {

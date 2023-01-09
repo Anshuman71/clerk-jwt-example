@@ -24,10 +24,10 @@ export default function Home() {
       .then((res) => res.json())
       .then((data) => {
         if (data.message === "success") {
-          localStorage.setItem("diy-jwt-token", data.token);
+          localStorage.setItem("jwt-token", data.token);
           setUsername("");
           setPassword("");
-          router.push("/diy-safehouse");
+          router.push("/jwt-safehouse");
         } else {
           alert(data.message);
         }
