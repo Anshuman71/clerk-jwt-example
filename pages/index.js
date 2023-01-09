@@ -16,6 +16,11 @@ export default function Home() {
             DIY Safe house
           </Link>
         </li>
+        <li>
+          <Link passHref href={"/safehouse"}>
+            Clerk Safe house
+          </Link>
+        </li>
       </ol>
     </div>
   );
