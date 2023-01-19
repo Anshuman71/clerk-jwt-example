@@ -38,7 +38,7 @@ export default function SafeHouse() {
       <main style={{ padding: "50px" }}>
         <h1>Safehouse </h1>
         <p>
-          You Safehour key is{" "}
+          You Safehouse key is{" "}
           <strong>{userData?.safehouseKey || "Loading..."}</strong>
         </p>
         <button onClick={logout}>Logout</button>
